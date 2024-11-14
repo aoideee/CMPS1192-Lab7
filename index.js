@@ -87,26 +87,26 @@ fetch(`https://api.giphy.com/v1/gifs/trending?api_key=bqMJusEQvP7kFXiM3y2F2WrAkm
   })
   .catch(error => console.error("Error fetching GIPHY API:", error));
 
-const protocol = window.location.protocol === "https:" ? "https" : "http";
-// Fetch a random number trivia
-const randomNumber = Math.floor(Math.random() * 300) + 1;
-fetch(`http://numbersapi.com/${randomNumber}/trivia`)
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("trivia").innerText = data;
-  })
-  .catch(error => console.error("Error fetching trivia:", error));
+// const protocol = window.location.protocol === "https:" ? "https" : "http";
+// // Fetch a random number trivia
+// const randomNumber = Math.floor(Math.random() * 300) + 1;
+// fetch(`http://numbersapi.com/${randomNumber}/trivia`)
+//   .then(response => response.text())
+//   .then(data => {
+//     document.getElementById("trivia").innerText = data;
+//   })
+//   .catch(error => console.error("Error fetching trivia:", error));
 
-// Fetch today's date fact
-const today = new Date();
-const month = today.getMonth() + 1;
-const day = today.getDate();
-fetch(`http://numbersapi.com/${month}/${day}/date`)
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("date-fact").innerText = data;
-  })
-  .catch(error => console.error("Error fetching date fact:", error));
+// // Fetch today's date fact
+// const today = new Date();
+// const month = today.getMonth() + 1;
+// const day = today.getDate();
+// fetch(`http://numbersapi.com/${month}/${day}/date`)
+//   .then(response => response.text())
+//   .then(data => {
+//     document.getElementById("date-fact").innerText = data;
+//   })
+//   .catch(error => console.error("Error fetching date fact:", error));
 
 // Fetch a random country
 fetch("https://restcountries.com/v3.1/all")
