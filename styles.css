@@ -1,0 +1,64 @@
+body{
+    background-color: #FEFAE0;
+}
+
+div {
+    background-color: #8F9779;
+    width: 50%;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    margin: 0 auto; /* Centers the div itself horizontally in its parent container */
+    border: 2px solid #283618; /* Dark Forest Green border */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+
+h1, h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* '600' is the correct value for semi-bold */
+  font-style: normal; /* Use 'normal' or 'italic', not 'semi-bold' */
+}
+
+p, footer{
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.light{
+    width: 100%;
+    background-color: #8F9779;
+}
+
+.dark{
+    width: 100%;
+    background-color: #6B8E94;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.header, footer{
+    width: 100%;
+    color: #FEFAE0;
+    background-color: #283618;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Webkit Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #283618 ; /* Track background: Sage Green */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8F9779; /* Thumb color: Muted Teal */
+    border-radius: 10px; /* Rounded edges for a smoother look */
+}
