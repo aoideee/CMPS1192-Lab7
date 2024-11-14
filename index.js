@@ -87,6 +87,7 @@ fetch(`https://api.giphy.com/v1/gifs/trending?api_key=bqMJusEQvP7kFXiM3y2F2WrAkm
   })
   .catch(error => console.error("Error fetching GIPHY API:", error));
 
+const protocol = window.location.protocol === "https:" ? "https" : "http";
 // Fetch a random number trivia
 const randomNumber = Math.floor(Math.random() * 300) + 1;
 fetch(`http://numbersapi.com/${randomNumber}/trivia`)
